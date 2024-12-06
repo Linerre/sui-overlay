@@ -1,6 +1,6 @@
 pkgs:
 let
-  version = "1.36.2";
+  version = "1.38.3";
 in
 pkgs.stdenv.mkDerivation {
   name = "sui-mainnet";
@@ -9,7 +9,7 @@ pkgs.stdenv.mkDerivation {
   src = pkgs.fetchzip {
     stripRoot = false;
     url = "https://github.com/MystenLabs/sui/releases/download/mainnet-v${version}/sui-mainnet-v${version}-ubuntu-x86_64.tgz";
-    sha256 = "1zvxxbnxv3q8y7r82fg7r1i6jldqqm1piviylvc51i1b6hzih6ny";
+    sha256 = "sha256-SZspfOP9ywIL0QBKfuSL8HEtK88/XqtENrmuumykJbQ=";
   };
 
   installPhase = ''

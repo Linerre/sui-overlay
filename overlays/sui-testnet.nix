@@ -1,6 +1,6 @@
 pkgs:
 let
-  version = "1.37.2";
+  version = "1.38.3";
 in
 pkgs.stdenv.mkDerivation {
   name = "sui-testnet";
@@ -9,7 +9,7 @@ pkgs.stdenv.mkDerivation {
   src = pkgs.fetchzip {
     stripRoot = false;
     url = "https://github.com/MystenLabs/sui/releases/download/testnet-v${version}/sui-testnet-v${version}-ubuntu-x86_64.tgz";
-    sha256 = "0am30i64nqnq8d7dmk9g4hx78fpxplsd836qv9hbhvx5wr3lj2j6";
+    sha256 = "sha256-SZspfOP9ywIL0QBKfuSL8HEtK88/XqtENrmuumykJbQ=";
   };
 
   installPhase = ''
