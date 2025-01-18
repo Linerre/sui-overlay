@@ -21,9 +21,9 @@
             devShell = pkgs.mkShell {
               nativeBuildInputs = [ pkgs.breakpointHook ];
               buildInputs = with pkgs; [
-                sui-devnet
                 # sui-testnet
-                # sui-mainnet
+                sui-mainnet
+                # sui-devnet
               ];
             };
           }

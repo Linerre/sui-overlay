@@ -1,6 +1,6 @@
 pkgs:
 let
-  version = "1.39.0";
+  version = "1.40.0";
 in
 pkgs.stdenv.mkDerivation {
   name = "sui-devnet";
@@ -9,7 +9,7 @@ pkgs.stdenv.mkDerivation {
   src = pkgs.fetchzip {
     stripRoot = false;
     url = "https://github.com/MystenLabs/sui/releases/download/devnet-v${version}/sui-devnet-v${version}-ubuntu-x86_64.tgz";
-    sha256 = "sha256-NjrdSGHF9mk7a8Dc6jHsv7qPMZORwDupFghMOnazo9c=";
+    sha256 = "F3m6BgiCWRxxhkpkR3w4VJAhT0lKo1QiGNGtgCZ4fMU=";
   };
 
   installPhase = ''
